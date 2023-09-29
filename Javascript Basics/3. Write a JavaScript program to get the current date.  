@@ -1,0 +1,10 @@
+// getting current date
+let date = new Date();
+let dayDate = date.getDate();
+let monthNum = date.getMonth();
+let year = date.getFullYear();
+
+console.log("Date in format dd/mm/yyyy -> ",dayDate+"/"+(monthNum + 1)+"/"+year);
+console.log("Date in format mm/dd/yyyy -> ",(monthNum + 1)+"/"+dayDate+"/"+year)
+console.log("Date in format mm-dd-yyyy -> ",(monthNum + 1)+"-"+dayDate+"-"+year)
+console.log("Date in format dd-mm-yyyy -> ",dayDate+"-"+(monthNum + 1)+"-"+year);

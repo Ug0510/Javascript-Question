@@ -1,0 +1,19 @@
+
+// Extracting full date and time
+let date = new Date();
+
+// making an array to get week day from week number 
+let dayList = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+// getDay() return number of week day
+console.log("Today is :",dayList[date.getDay()]);
+
+// extracting hour , minute and seconds of time
+let hourTime = date.getHours();
+let minuteTime = date.getMinutes();
+let secondTime = date.getSeconds();
+
+// checking time and knowing if it's am or pm
+let ampm = (hourTime > 11)? 'PM' : 'AM';
+
+// printing the time in desired format 
+console.log('Current time is :',hourTime%12+" "+ampm+" : "+minuteTime+" : "+secondTime )
