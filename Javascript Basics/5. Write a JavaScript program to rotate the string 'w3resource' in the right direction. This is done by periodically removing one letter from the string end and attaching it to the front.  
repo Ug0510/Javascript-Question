@@ -1,0 +1,23 @@
+function rotateStringRight(str) {
+  if (str.length <= 1) {
+    return str; // Nothing to rotate
+  }
+
+  // Convert the string to an array of characters for easier manipulation
+  const strArray = str.split('');
+
+  // Remove the last character from the array and add it to the front in a loop
+  for (let i = 0; i < str.length - 1; i++) {
+    const lastChar = strArray.pop();
+    strArray.unshift(lastChar);
+  }
+
+  // Convert the array of characters back to a string
+  const rotatedStr = strArray.join('');
+
+  return rotatedStr;
+}
+
+const originalStr = 'w3resource';
+const rotatedStr = rotateStringRight(originalStr);
+console.log(rotatedStr);
