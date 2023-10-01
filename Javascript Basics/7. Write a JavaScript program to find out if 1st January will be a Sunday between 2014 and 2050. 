@@ -1,0 +1,10 @@
+
+for(let year = 2014; year <= 2050; year++)
+{
+    // creating new object of date with specific year and 0 represents january month and 1 represents 1st of date
+    let date = new Date(year,0,1);
+    if(date.getDay() == 0)
+    {
+        console.log(year);
+    }
+}
