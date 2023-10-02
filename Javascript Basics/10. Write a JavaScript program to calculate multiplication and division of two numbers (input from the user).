@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication Division</title>
+</head>
+<body>
+    
+    <div style="border: 2px solid black; width: fit-content; padding: 20px; margin: auto;">
+        <label for="input1">
+            1st Number:
+        </label>
+        <input type="number" name="input1" id="input1">
+        <br>
+        <br>
+        <label for="input2">
+            2nd Number:
+        </label>
+        <input type="number" name="input2" id="input2">
+        <br>
+        <br>
+        <input type="button" value="Multiply" onclick="calculate(0)">
+        <input type="button" value="Divide" onclick="calculate(1)">
+        <br>
+        <br>
+        <br>
+        <span>
+            The Result is:
+            <br>
+            <span id="output"></span>
+        </span>
+        <br>
+        <br>
+    </div>
+
+
+    <script>
+        const input1 = document.getElementById('input1');
+        const input2 = document.getElementById('input2');
+        const output = document.getElementById('output');
+        function calculate(choice){
+            if(input1.value != null && input2.value != null)
+            {
+                const outputValue = (choice == 0)? input1.value * input2.value : (choice == 1)? input1.value / input2.value : "";
+                output.innerText = outputValue;
+            }
+        }
+    </script>
+
+</body>
+</html>
