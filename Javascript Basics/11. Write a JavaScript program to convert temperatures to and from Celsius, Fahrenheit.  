@@ -1,0 +1,16 @@
+// Taking the inputs 
+const temp = parseInt(prompt('Enter the temperature: '));
+const choice = parseInt(prompt('Press 1 for Celsius to Fahrenheit and 2 for Fahrenheit to Celsius: '));
+
+// checking the choice
+if(choice == 1)
+{
+    // converting celsius to fahrenheit 
+    const fahTemp = ((temp / 5.0) * 9 ) + 32;
+    console.log(`Temperature in Fahrenheit is ${fahTemp}`);
+}else if(choice == 2)
+{
+    // converting fahrenheit to celsius
+    const celTemp = ((temp-32.0)/9.0) * 5;
+    console.log(`Temperature in Celsius is ${celTemp}`);
+}
