@@ -1,0 +1,8 @@
+// taking input
+const varName = prompt("Enter the name for your variable: ");
+const value = prompt("Enter it's value: ");
+
+// creating a variable with a user-defined name
+this[varName] = value;
+
+console.log(`value of ${varName} is ${value}`);
