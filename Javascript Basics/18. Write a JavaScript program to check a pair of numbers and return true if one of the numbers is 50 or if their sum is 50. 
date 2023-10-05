@@ -1,0 +1,7 @@
+// function to return true if any of the two numbers is 50 or their sum is equal to 50
+function pairFifty(num1 , num2)
+{
+    if(num1 == 50 || num2 == 50 || (num1 + num2) == 50)
+        return true;
+    return false;
+}
