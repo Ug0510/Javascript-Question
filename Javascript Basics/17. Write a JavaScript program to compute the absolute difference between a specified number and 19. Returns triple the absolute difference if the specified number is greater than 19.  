@@ -1,0 +1,11 @@
+function absoluteDifference(num)
+{
+    // if number is smaller than or equal to 19
+    if(num <= 19)
+    {
+        return 19 - num;
+    }
+    return (num - 19) * 3;
+}
+console.log(absoluteDifference(8));
+console.log(absoluteDifference(22));
