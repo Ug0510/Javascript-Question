@@ -1,0 +1,12 @@
+function within20(num)
+{
+    if(num >= 100 && num < 121)
+    {
+        return true;
+    }else if(num >= 400 && num < 421)
+    {
+        return true;
+    }
+    return false;
+}
+console.log(within20(20));
