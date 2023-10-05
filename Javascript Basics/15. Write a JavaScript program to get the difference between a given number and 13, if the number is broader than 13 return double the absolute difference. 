@@ -1,0 +1,14 @@
+function differenceFinder(n){
+
+    // if n is smaller than or equal to 13
+    if(n <= 13)
+    {
+        return 13 - n;
+    }
+    else
+    {
+        return (n - 13) * 2;
+    }
+}
+console.log(differenceFinder(5));
+console.log(differenceFinder(26));
