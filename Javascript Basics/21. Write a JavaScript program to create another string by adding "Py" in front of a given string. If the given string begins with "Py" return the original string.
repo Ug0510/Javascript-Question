@@ -1,0 +1,10 @@
+// program to print 'py' before the input string if it already have it then return as such
+const inputString = prompt("Enter your String: ");
+if(inputString.slice(0,2).toLowerCase() == 'py')
+{
+    console.log(inputString);
+}
+el
+{
+    console.log("Py"+inputString);
+}
