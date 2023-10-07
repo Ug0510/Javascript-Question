@@ -1,0 +1,9 @@
+// Program to remove a character at the specified position
+
+// Taking input from user
+const inputString = prompt("Enter your String");
+const elementPosition = parseInt(prompt('Enter the position of element which you want to remove'));
+
+// removing the character at specific position
+const newString = inputString.slice(0,elementPosition - 1) + inputString.slice(elementPosition);
+console.log(newString);
