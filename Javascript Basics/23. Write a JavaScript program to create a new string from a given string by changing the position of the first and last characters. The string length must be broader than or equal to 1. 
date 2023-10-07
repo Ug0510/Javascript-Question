@@ -1,0 +1,15 @@
+// program to swap first and last character of a word
+const inputString = prompt("Enter you String: ");
+
+// checking if input String length is greater than 1
+if(inputString.length > 1)
+{
+    // extracting first letter
+    const firstLetter = inputString.charAt(0);
+    // extracting last letter
+    const lastLetter = inputString.charAt(inputString.length - 1);
+    // creating new string 
+    const newString = lastLetter + inputString.slice(1,inputString.length - 1) + firstLetter;
+    console.log(newString);
+}
+console.log(inputString);
