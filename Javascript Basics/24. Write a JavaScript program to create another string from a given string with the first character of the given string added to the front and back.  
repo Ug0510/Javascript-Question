@@ -1,0 +1,9 @@
+// program to add first character of it to first and last 
+const inputString = prompt("Enter your String ");
+
+if(inputString.length > 0)
+{
+    const newString = inputString.charAt(0) + inputString + inputString.charAt(0);
+    console.log(newString);
+}
+
