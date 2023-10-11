@@ -1,0 +1,10 @@
+// program to check if string starts with "java"
+
+const string = prompt('Enter you String');
+if(string.length > 4 && string.substring(0,4).toLowerCase() == 'java')
+{
+    console.log("True");
+}
+else{
+    console.log("False");
+}
