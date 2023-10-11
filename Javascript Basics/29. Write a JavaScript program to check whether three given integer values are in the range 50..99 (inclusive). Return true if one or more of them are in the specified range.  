@@ -1,0 +1,12 @@
+// Program to check if any of the two number is in range 50 to 99(inclusive)
+
+const num1 = parseInt(prompt('Enter a number:'));
+const num2 = parseInt(prompt('Enter second number'));
+
+if( (num1 >= 50 && num1 <= 99) || (num2 >= 50 && num2 <= 99))
+{
+    console.log("True");
+}
+else{
+    console.log("False");
+}
