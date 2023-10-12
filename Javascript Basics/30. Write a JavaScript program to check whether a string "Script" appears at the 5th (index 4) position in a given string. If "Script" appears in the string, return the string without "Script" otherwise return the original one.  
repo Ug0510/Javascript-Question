@@ -1,1 +1,10 @@
-// javaScript program to check whether a string "Script" appears at the 5th (index 4) position in a given string. If "Script" appears in the string, return the string without "Script" otherwise return the original one.  
+// Program to remove 'Scripts' from word if present otherwise print original
+const inputString = prompt('Enter your string');
+if(inputString.substring(5,11) == 'Script')
+{
+    console.log(inputString.substring(0,5) + inputString.substring(11));
+}
+else
+{
+    console.log(inputString);
+}
