@@ -1,0 +1,16 @@
+// program to find closest to 100 between two numbers
+const a = 23;
+const b = 49;
+
+if(a == b)
+{
+    console.log("Both are equal");
+}
+else if( 100-a > 100-b) 
+{
+    console.log(b+" is closer to 100");
+}
+else 
+{
+    console.log(a+" is closer to 100");
+}
