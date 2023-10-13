@@ -1,0 +1,11 @@
+    // program to check if two numbers are in range 40..60 or 70...100 inclusive
+    const num1 = 39;
+    const num2 = 92;
+
+    if(((num1 <= 60 && num1 >= 40) && (num2 <= 60 && num2 >= 40)) || ((num1 <= 100 && num1 >= 70) && (num2 <= 100 && num2 >= 70)))
+    {
+        console.log('True');
+    }
+    else{
+        console.log('False');
+    }i 
