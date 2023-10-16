@@ -1,1 +1,19 @@
-// new program
+// Program to find largest between two numbers which are in the range 40 to 60 
+
+const n1 = 43;
+const n2 = 52;
+
+if((n1 <= 60 && n1 >= 40) && (n2 <= 60 && n2 >= 40))
+{
+    if(n1 > n2)
+    {
+        console.log(n1 ,' is largest');
+    }
+    else 
+    {
+        console.log(n2,' is largest');
+    }
+}
+else{
+    console.log('numbers not in range');
+}
