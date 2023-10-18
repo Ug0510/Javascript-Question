@@ -1,1 +1,23 @@
 // program to check whether a specified character exists between the 2nd and 4th positions in a given string
+
+function checkString(inputString, letter)
+{
+    int flag = 0;
+    for(let i = 1 ; i <= 3; i++)
+    {
+        if( letter == inputString.charAt(i))
+        {
+            console.log('Letter present');
+            flag = 1;
+            break;
+        }
+    }
+    if(flag == 0)
+    {
+        console.log('not present');
+    }
+}
+
+checkString('Python','p');
+checkString('Python','y');
+
