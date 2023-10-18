@@ -1,0 +1,17 @@
+// program that checks whether the last digit of three positive integers is the same. 
+
+const n1 = 825; 
+const n2 = 3425;
+const n3 = 15;
+
+if(n1 > 0 && n2 > 0 && n3 > 0)
+{
+    if((n1 % 10 == n2 % 10) && (n2 % 10 == n3 % 10))
+    {
+        console.log('true');
+    }
+}
+else
+{
+    console.log('false');
+}
