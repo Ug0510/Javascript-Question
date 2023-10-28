@@ -3,7 +3,7 @@
 const inputString = prompt('Enter your String');
 if(inputString.length > 2)
 {
-    const piece = inputString.subString(0,3).toLowerCase();
+    const piece = inputString.substring(0,3).toLowerCase();
     console.log(piece);
 }
 else{
