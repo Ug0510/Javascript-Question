@@ -1,2 +1,11 @@
 // program to produce a new string that has the first 3 characters in lower case from a given string. If the string length is less than 3 convert all the characters to upper case.
 
+const inputString = prompt('Enter your String');
+if(inputString.length > 2)
+{
+    const piece = inputString.subString(0,3).toLowerCase();
+    console.log(piece);
+}
+else{
+    console.log(inputString.toUpperCase());
+}
