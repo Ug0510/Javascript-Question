@@ -1,1 +1,18 @@
-//  program to compute the sum of the two given integers. If the sum is in the range 50..80 return 65 otherwise return 80.  
+// program to compute the sum of the two given integers. If the sum is in the range 50..80 return 65 otherwise return 80.  
+
+function sum_in_range(n1 , n2)
+{
+    sum = n1 + n2;
+
+    if(sum <= 80 && sum >= 50)
+    {
+        return 65;
+    }
+    else
+    {
+        return 80;
+    }
+}
+
+console.log(sum_in_range(30,20));
+console.log(sum_in_range(90,80));
