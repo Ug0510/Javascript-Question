@@ -1,1 +1,17 @@
 // program to find grade of student on basis of their marks range
+
+function grade_finder(total_marks , is_final)
+{
+    if(is_final)
+    {
+        return total_marks > 90;
+    }
+    else 
+    {
+        return (total_marks >= 89 && total_marks <= 100);
+    }
+}
+
+console.log(grade_finder("78", " "));
+console.log(grade_finder("89", "true "));
+console.log(grade_finder("99", "true "));
