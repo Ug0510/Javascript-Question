@@ -1,1 +1,19 @@
 // program to check a set of three numbers; if the three numbers are the same return 30; otherwise return 20; and if two numbers are the same return 40.  
+
+function check3num(n1, n2 , n3)
+{
+    if(n1 == n2 && n2 == n3){
+        return 30;
+    }
+    else if(n1 == n2 || n2 == n3 || n3 == n1)
+    {
+        return 40;
+    }
+    else 
+    {
+        return 20;
+    }
+}
+console.log(check3num(3,3,3));
+console.log(check3num(2,5,1));
+console.log(check3num(1,8,1));
