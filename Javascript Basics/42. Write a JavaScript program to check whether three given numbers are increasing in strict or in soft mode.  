@@ -6,9 +6,12 @@ function checkStrictMode(a,b,c)
     {
         return "strict mode";
     }
-    else
+    else if(c > b)
     {
         return "soft mode";
+    }
+    else{
+        return "Undefined";
     }
 }
 
