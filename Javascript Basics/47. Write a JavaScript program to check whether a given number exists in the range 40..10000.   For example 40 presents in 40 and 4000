@@ -1,0 +1,15 @@
+// program to check whether a given number exists in the range 40..10000.  
+// For example 40 presents in 40 and 4000
+
+function test_digit(n)
+{
+    if(n >= 40 && n <= 10000)
+    {
+        return true;
+    }
+    return false;
+}
+
+console.log(test_digit(40));   
+console.log(test_digit(80000));   
+console.log(test_digit(8908));   
