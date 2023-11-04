@@ -1,2 +1,25 @@
 // program to capitalize the first letter of each word in a given string. 
 
+function capitalizeCase(sentence)
+{
+    // adding a space in starting of sentence
+    sentence = ' ' + sentence;
+
+    let newString = '';
+    for(let i = 0; i < sentence.length; i++)
+    {
+        if(sentence.charAt(i) == ' ')
+        {
+            newString += sentence.charAt(i);
+            i++;
+            newString += sentence.charAt(i).toUpperCase();
+        }
+        else
+        {
+            newString += sentence.charAt(i);
+        }
+    }
+    return newString;
+}
+
+console.log(capitalizeCase('hey, how are you?'));
