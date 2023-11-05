@@ -1,0 +1,8 @@
+// program to convert letters of a given string alphabetically.
+
+function letter_sort(word)
+{
+    return word.toLowerCase().split("").sort().join("");
+}
+
+console.log(letter_sort("Python"));
