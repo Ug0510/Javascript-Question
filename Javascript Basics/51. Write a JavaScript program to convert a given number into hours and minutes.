@@ -1,0 +1,10 @@
+// program to convert a given number into hours and minutes.
+
+function time_convert(num)
+{
+    let hour = parseInt(num / 60);
+    let min = num % 60 ;
+    return `${hour} hours ${min} minutes`;
+}
+
+console.log(time_convert(450));
