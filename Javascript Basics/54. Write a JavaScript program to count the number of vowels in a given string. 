@@ -1,2 +1,18 @@
 // program to count the number of vowels in a given string. 
 
+function countVowel(inputString)
+{
+    inputString = inputString.toLowerCase();
+    let count = 0;
+    for(let i = 0; i < inputString.length; i++)
+    {
+        one = inputString.charAt(i);
+        if(one == 'a' || one == 'e' || one == 'i' || one == 'o' || one == 'u')
+        {
+            count ++;
+        }
+    }
+    return count;
+}
+
+console.log(countVowel('hi, how are you?'));
