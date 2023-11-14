@@ -1,1 +1,22 @@
 // program to create one string of specified copies (positive numbers) of a given string.
+
+function string_copies(str, n)
+{
+    if(n<0)
+    {
+        return false;
+    }
+    let newStr = '';
+    for(let i = 1; i <= n; i++)
+    {
+        newStr += str;
+    }
+    return newStr;
+}
+
+// Log the result of calling string_copies with the arguments "abc" and 5 to the console
+console.log(string_copies("abc", 5));
+// Log the result of calling string_copies with the arguments "abc" and 0 to the console
+console.log(string_copies("abc", 0));
+// Log the result of calling string_copies with the arguments "abc" and -2 to the console
+console.log(string_copies("abc", -2)); 
