@@ -2,12 +2,13 @@
 
 function first_half(str)
 {
+    // if length is not even return original string
     if(str.length % 2 != 0)
     {
         return str;
     }
 
-    
+    // if string length is even string first half
     return str.substring(0 , str.length / 2);
 }
 
