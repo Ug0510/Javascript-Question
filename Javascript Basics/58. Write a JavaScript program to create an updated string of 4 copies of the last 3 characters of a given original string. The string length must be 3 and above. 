@@ -1,0 +1,17 @@
+// program to create an updated string of 4 copies of the last 3 characters of a given original string. The string length must be 3 and above. 
+
+function newstring(str)
+{
+    if(str.length < 3)
+    {
+        return false;
+    }
+
+    let newStr = str.substring(str.length -3);
+          
+}
+
+// Call the function with sample arguments and log the results to the console
+console.log(newstring("Python 3.0"));
+console.log(newstring("JS"));
+console.log(newstring("JavaScript")); 
