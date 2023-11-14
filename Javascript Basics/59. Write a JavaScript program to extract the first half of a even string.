@@ -1,0 +1,16 @@
+// program to extract the first half of a even string
+
+function first_half(str)
+{
+    if(str.length % 2 != 0)
+    {
+        return str;
+    }
+
+    
+    return str.substring(0 , str.length / 2);
+}
+
+console.log(first_half('hell'));
+console.log(first_half('nice one'));
+console.log(first_half('honey'));
