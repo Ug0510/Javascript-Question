@@ -1,0 +1,16 @@
+// program to concatenate two strings and return the result. If the length of the strings does not match, then remove the characters from the longer string. 
+
+
+function concat_strings(str1 , str2)
+{
+    if(str1.length > str2.length)
+    {
+        return str1.slice(-1 * str2.length) + str2;
+    }
+   
+   return str1 + str2.slice(-1 * str1.length);
+
+}
+
+console.log(concat_strings('hi','hello'));
+console.log(concat_strings('hello','hi'));
