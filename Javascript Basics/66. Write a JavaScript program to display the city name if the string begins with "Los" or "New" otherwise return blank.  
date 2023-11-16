@@ -1,0 +1,15 @@
+// program to display the city name if the string begins with "Los" or "New" otherwise return blank.  
+
+function begin_with(str)
+{
+    if(str.length > 2)
+    {
+        if(str.substring(0,3) == 'Los' || str.substring(0,3) == 'New')
+        {
+            return str;
+        }
+    }
+
+    return ' ';
+
+}
