@@ -1,0 +1,13 @@
+// program to create a new string using the first and last n characters from a given string. The string length must be larger than or equal to n.  
+
+function subPart(str,n)
+{
+    if(str.length >= n)
+    {
+        str = str.substring(0,n) + str.slice(-1 * n);
+    }
+    return str;
+}
+
+console.log(subPart("JavaScript", 2));
+console.log(subPart("JavaScript", 3));
