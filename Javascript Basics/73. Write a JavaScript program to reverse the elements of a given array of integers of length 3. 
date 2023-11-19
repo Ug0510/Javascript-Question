@@ -1,0 +1,11 @@
+// program to reverse the elements of a given array of integers of length 3. 
+
+function reverse_array(arr)
+{
+    let temp = arr[0];
+    arr[0] = arr[2];
+    arr[2] = temp;
+    return arr;
+}
+
+console.log(reverse_array([1,2,3]));
